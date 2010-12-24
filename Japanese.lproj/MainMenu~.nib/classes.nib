@@ -1,0 +1,72 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {updateMenu = id; }; 
+            CLASS = AddressBookController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {statusBarMenu = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = AddressGroup; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {appController = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                buttonOperation = id; 
+                showHelpMenu = id; 
+                showMainWindow = id; 
+                showPrefPanel = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mDeleteButton = NSButton; 
+                mGoButton = NSButton; 
+                mHeaderButton = NSButton; 
+                mMainWin = NSWindow; 
+                mPrefButton = NSButton; 
+                mPrefController = PrefController; 
+                mPrefPanel = NSPanel; 
+                mSelectStat = NSTextField; 
+                mSpin = NSProgressIndicator; 
+                mStatus = NSTextField; 
+                mStopButton = NSButton; 
+                mTableView = NSTableView; 
+                sbMenu = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {buttonOperation = id; closeSheet = id; }; 
+            CLASS = PrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAccountForm = NSForm; 
+                mAccountSheet = NSWindow; 
+                mAppController = AppController; 
+                mDeleteButton = NSButton; 
+                mEditButton = NSButton; 
+                "mErrorVoice_CB" = NSButton; 
+                "mErrorVoice_TV" = NSTextView; 
+                mGeneralSheet = NSWindow; 
+                "mGoAtStart_CB" = NSButton; 
+                "mNewMailVoice_CB" = NSButton; 
+                "mNewMailVoice_TV" = NSTextView; 
+                "mPassword_TF" = NSSecureTextField; 
+                mPrefPanel = NSPanel; 
+                mReWalkButton = NSButton; 
+                "mRepeat_CB" = NSButton; 
+                "mRepeat_TF" = NSTextField; 
+                mStopWalkButton = NSButton; 
+                mTableView = NSTableView; 
+                mToTopButton = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		29B97326FDCFA39411CA2CEA /* MailPeeper */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = B503F801129BCD7F00A54AFF /* Build configuration list for PBXApplicationTarget "MailPeeper" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+				F59B46F5033B618201A80102 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = MailPeeper;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MailPeeper;
+			productReference = 17587328FF379C6511CA2CBB /* MailPeeper_Menu.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MailPeeper_Menu</string>
+	<key>CFBundleGetInfoString</key>
+	<string>MailPeeper (C)2002 by Dentom. , MailPeeper_Menu (C)2003 by Anne</string>
+	<key>CFBundleIconFile</key>
+	<string>appl-icon</string>
+	<key>CFBundleIdentifier</key>
+	<string>jp.Dentom.MailPeeper_Menu</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>MailPeeper_Menu Ver.1.0.3</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>Ver.1.0.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.3</string>
+	<key>LSUIElement</key>
+	<string>1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		29B9732CFDCFA39411CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		B503F820129BD1B600A54AFF /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A48F3A0330888101A80102 /* AppController.h */; };
+		B503F821129BD1B600A54AFF /* Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = F544360303309E2901A80102 /* Misc.h */; };
+		B503F822129BD1B600A54AFF /* PrefController.h in Headers */ = {isa = PBXBuildFile; fileRef = F544360D0330BD1701A80102 /* PrefController.h */; };
+		B503F823129BD1B600A54AFF /* PeepedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F54436140330C70001A80102 /* PeepedItem.h */; };
+		B503F824129BD1B600A54AFF /* AccountItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F54436180330CAB501A80102 /* AccountItem.h */; };
+		B503F825129BD1B600A54AFF /* GeneralItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F58AF43C03319DC101A80102 /* GeneralItem.h */; };
+		B503F826129BD1B600A54AFF /* WorkerThread.h in Headers */ = {isa = PBXBuildFile; fileRef = F51360AC0333381A0189C6B1 /* WorkerThread.h */; };
+		B503F827129BD1B600A54AFF /* STCPCReadLine.h in Headers */ = {isa = PBXBuildFile; fileRef = F5136426033376160189C6B1 /* STCPCReadLine.h */; };
+		B503F828129BD1B600A54AFF /* SimpleTCPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F5136427033376160189C6B1 /* SimpleTCPClient.h */; };
+		B503F829129BD1B600A54AFF /* UIDLHelpItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C1381D0334454C01A80102 /* UIDLHelpItem.h */; };
+		B503F82A129BD1B600A54AFF /* HeaderAnalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C13BA20334C6ED01A80102 /* HeaderAnalizer.h */; };
+		B503F82B129BD1B600A54AFF /* HeaderWinController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FC25560336031B01A80102 /* HeaderWinController.h */; };
+		B503F82C129BD1B600A54AFF /* SimpleFIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B2C4ED0350595F01237D66 /* SimpleFIFO.h */; };
+		B503F82D129BD1B600A54AFF /* SimpleSyncFIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B2C4EE0350595F01237D66 /* SimpleSyncFIFO.h */; };
+		B503F82E129BD1B600A54AFF /* PostedEventProc.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B2C502035077BB01237D66 /* PostedEventProc.h */; };
+		B503F82F129BD1B600A54AFF /* mailpeeper-Menu_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CBB56804ADDA650025594E /* mailpeeper-Menu_Prefix.h */; };
+		B503F831129BD1B600A54AFF /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		B503F832129BD1B600A54AFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		B503F833129BD1B600A54AFF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F54436090330A06F01A80102 /* Localizable.strings */; };
+		B503F834129BD1B600A54AFF /* HeaderWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5FC2553033602AF01A80102 /* HeaderWin.nib */; };
+		B503F835129BD1B600A54AFF /* delete-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9E990337276E01A80102 /* delete-b.pict */; };
+		B503F836129BD1B600A54AFF /* go-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9E9B0337277401A80102 /* go-b.pict */; };
+		B503F837129BD1B600A54AFF /* header-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9EA703372ACE01A80102 /* header-b.pict */; };
+		B503F838129BD1B600A54AFF /* stop-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9EA803372ACE01A80102 /* stop-b.pict */; };
+		B503F839129BD1B600A54AFF /* pref-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9EA903372ACE01A80102 /* pref-b.pict */; };
+		B503F83A129BD1B600A54AFF /* appl-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F55A9EAD03372D4901A80102 /* appl-icon.icns */; };
+		B503F83B129BD1B600A54AFF /* accountpane.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46F8033B626401A80102 /* accountpane.png */; };
+		B503F83C129BD1B600A54AFF /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = F59B46F9033B626401A80102 /* help.html */; };
+		B503F83D129BD1B600A54AFF /* junkaipane.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46FA033B626401A80102 /* junkaipane.png */; };
+		B503F83E129BD1B600A54AFF /* mainwindow.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46FB033B626401A80102 /* mainwindow.png */; };
+		B503F83F129BD1B600A54AFF /* newaccpane.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46FC033B626401A80102 /* newaccpane.png */; };
+		B503F840129BD1B600A54AFF /* prefwindow.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46FD033B626401A80102 /* prefwindow.png */; };
+		B503F841129BD1B600A54AFF /* next.html in Resources */ = {isa = PBXBuildFile; fileRef = F511E572033B85B401A80102 /* next.html */; };
+		B503F842129BD1B600A54AFF /* appl-walking.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5A7BED8034D5A690137FB37 /* appl-walking.tiff */; };
+		B503F843129BD1B600A54AFF /* appl-newmail.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5A7BEDA034D5B4A0137FB37 /* appl-newmail.tiff */; };
+		B503F844129BD1B600A54AFF /* appl-error.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5A7BEDC034D5C0B0137FB37 /* appl-error.tiff */; };
+		B503F845129BD1B600A54AFF /* new.applescript in Resources */ = {isa = PBXBuildFile; fileRef = D6615AB303B6D7FC00E1D998 /* new.applescript */; };
+		B503F846129BD1B600A54AFF /* mail-error.icns in Resources */ = {isa = PBXBuildFile; fileRef = D6D8D08C03CC4FD40053CC21 /* mail-error.icns */; };
+		B503F847129BD1B600A54AFF /* mail-new.icns in Resources */ = {isa = PBXBuildFile; fileRef = D6D8D08D03CC4FD40053CC21 /* mail-new.icns */; };
+		B503F848129BD1B600A54AFF /* mail-r.icns in Resources */ = {isa = PBXBuildFile; fileRef = D6D8D08E03CC4FD40053CC21 /* mail-r.icns */; };
+		B503F849129BD1B600A54AFF /* mail.icns in Resources */ = {isa = PBXBuildFile; fileRef = D6D8D08F03CC4FD40053CC21 /* mail.icns */; };
+		B503F84B129BD1B600A54AFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		B503F84C129BD1B600A54AFF /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A48F3B0330888101A80102 /* AppController.m */; };
+		B503F84D129BD1B600A54AFF /* Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = F544360403309E2901A80102 /* Misc.m */; };
+		B503F84E129BD1B600A54AFF /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = F544360C0330BD1701A80102 /* PrefController.m */; };
+		B503F84F129BD1B600A54AFF /* PeepedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F54436150330C70001A80102 /* PeepedItem.m */; };
+		B503F850129BD1B600A54AFF /* AccountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F54436190330CAB501A80102 /* AccountItem.m */; };
+		B503F851129BD1B600A54AFF /* GeneralItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F58AF43D03319DC101A80102 /* GeneralItem.m */; };
+		B503F852129BD1B600A54AFF /* WorkerThread.m in Sources */ = {isa = PBXBuildFile; fileRef = F51360AD0333381A0189C6B1 /* WorkerThread.m */; };
+		B503F853129BD1B600A54AFF /* STCPCReadLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F5136424033376160189C6B1 /* STCPCReadLine.m */; };
+		B503F854129BD1B600A54AFF /* SimpleTCPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F5136425033376160189C6B1 /* SimpleTCPClient.m */; };
+		B503F855129BD1B600A54AFF /* UIDLHelpItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C1381E0334454C01A80102 /* UIDLHelpItem.m */; };
+		B503F856129BD1B600A54AFF /* HeaderAnalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C13BA30334C6ED01A80102 /* HeaderAnalizer.m */; };
+		B503F857129BD1B600A54AFF /* HeaderWinController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FC25570336031B01A80102 /* HeaderWinController.m */; };
+		B503F858129BD1B600A54AFF /* SimpleFIFO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B2C4F10350597601237D66 /* SimpleFIFO.m */; };
+		B503F859129BD1B600A54AFF /* SimpleSyncFIFO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B2C4F20350597601237D66 /* SimpleSyncFIFO.m */; };
+		B503F85A129BD1B600A54AFF /* PostedEventProc.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B2C503035077BB01237D66 /* PostedEventProc.m */; };
+		B503F85C129BD1B600A54AFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B503F85D129BD1B600A54AFF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6360B4E0402A629009CA739 /* AddressBook.framework */; };
+		D6360B4F0402A629009CA739 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6360B4E0402A629009CA739 /* AddressBook.framework */; };
+		D6615AB403B6D7FC00E1D998 /* new.applescript in Resources */ = {isa = PBXBuildFile; fileRef = D6615AB303B6D7FC00E1D998 /* new.applescript */; };
+		D6CBB56904ADDA650025594E /* mailpeeper-Menu_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CBB56804ADDA650025594E /* mailpeeper-Menu_Prefix.h */; };
+		D6D8D09003CC4FD40053CC21 /* mail-error.icns in Resources */ = {isa = PBXBuildFile; fileRef = D6D8D08C03CC4FD40053CC21 /* mail-error.icns */; };
+		D6D8D09103CC4FD40053CC21 /* mail-new.icns in Resources */ = {isa = PBXBuildFile; fileRef = D6D8D08D03CC4FD40053CC21 /* mail-new.icns */; };
+		D6D8D09203CC4FD40053CC21 /* mail-r.icns in Resources */ = {isa = PBXBuildFile; fileRef = D6D8D08E03CC4FD40053CC21 /* mail-r.icns */; };
+		D6D8D09303CC4FD40053CC21 /* mail.icns in Resources */ = {isa = PBXBuildFile; fileRef = D6D8D08F03CC4FD40053CC21 /* mail.icns */; };
+		F511E573033B85B401A80102 /* next.html in Resources */ = {isa = PBXBuildFile; fileRef = F511E572033B85B401A80102 /* next.html */; };
+		F51360AE0333381A0189C6B1 /* WorkerThread.h in Headers */ = {isa = PBXBuildFile; fileRef = F51360AC0333381A0189C6B1 /* WorkerThread.h */; };
+		F51360AF0333381A0189C6B1 /* WorkerThread.m in Sources */ = {isa = PBXBuildFile; fileRef = F51360AD0333381A0189C6B1 /* WorkerThread.m */; };
+		F5136428033376160189C6B1 /* STCPCReadLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F5136424033376160189C6B1 /* STCPCReadLine.m */; };
+		F5136429033376170189C6B1 /* SimpleTCPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F5136425033376160189C6B1 /* SimpleTCPClient.m */; };
+		F513642A033376170189C6B1 /* STCPCReadLine.h in Headers */ = {isa = PBXBuildFile; fileRef = F5136426033376160189C6B1 /* STCPCReadLine.h */; };
+		F513642B033376170189C6B1 /* SimpleTCPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F5136427033376160189C6B1 /* SimpleTCPClient.h */; };
+		F544360503309E2901A80102 /* Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = F544360303309E2901A80102 /* Misc.h */; };
+		F544360603309E2901A80102 /* Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = F544360403309E2901A80102 /* Misc.m */; };
+		F544360B0330A06F01A80102 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F54436090330A06F01A80102 /* Localizable.strings */; };
+		F544360E0330BD1701A80102 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = F544360C0330BD1701A80102 /* PrefController.m */; };
+		F544360F0330BD1701A80102 /* PrefController.h in Headers */ = {isa = PBXBuildFile; fileRef = F544360D0330BD1701A80102 /* PrefController.h */; };
+		F54436160330C70001A80102 /* PeepedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F54436140330C70001A80102 /* PeepedItem.h */; };
+		F54436170330C70001A80102 /* PeepedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F54436150330C70001A80102 /* PeepedItem.m */; };
+		F544361A0330CAB501A80102 /* AccountItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F54436180330CAB501A80102 /* AccountItem.h */; };
+		F544361B0330CAB501A80102 /* AccountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F54436190330CAB501A80102 /* AccountItem.m */; };
+		F55A9E9A0337276E01A80102 /* delete-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9E990337276E01A80102 /* delete-b.pict */; };
+		F55A9E9C0337277401A80102 /* go-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9E9B0337277401A80102 /* go-b.pict */; };
+		F55A9EAA03372ACE01A80102 /* header-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9EA703372ACE01A80102 /* header-b.pict */; };
+		F55A9EAB03372ACE01A80102 /* stop-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9EA803372ACE01A80102 /* stop-b.pict */; };
+		F55A9EAC03372ACE01A80102 /* pref-b.pict in Resources */ = {isa = PBXBuildFile; fileRef = F55A9EA903372ACE01A80102 /* pref-b.pict */; };
+		F55A9EAE03372D4901A80102 /* appl-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F55A9EAD03372D4901A80102 /* appl-icon.icns */; };
+		F58AF43E03319DC101A80102 /* GeneralItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F58AF43C03319DC101A80102 /* GeneralItem.h */; };
+		F58AF43F03319DC101A80102 /* GeneralItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F58AF43D03319DC101A80102 /* GeneralItem.m */; };
+		F59B46FF033B626601A80102 /* accountpane.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46F8033B626401A80102 /* accountpane.png */; };
+		F59B4700033B626701A80102 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = F59B46F9033B626401A80102 /* help.html */; };
+		F59B4701033B626701A80102 /* junkaipane.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46FA033B626401A80102 /* junkaipane.png */; };
+		F59B4702033B626701A80102 /* mainwindow.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46FB033B626401A80102 /* mainwindow.png */; };
+		F59B4703033B626701A80102 /* newaccpane.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46FC033B626401A80102 /* newaccpane.png */; };
+		F59B4704033B626801A80102 /* prefwindow.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B46FD033B626401A80102 /* prefwindow.png */; };
+		F5A48F3C0330888101A80102 /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A48F3A0330888101A80102 /* AppController.h */; };
+		F5A48F3D0330888101A80102 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A48F3B0330888101A80102 /* AppController.m */; };
+		F5A7BED9034D5A690137FB37 /* appl-walking.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5A7BED8034D5A690137FB37 /* appl-walking.tiff */; };
+		F5A7BEDB034D5B4A0137FB37 /* appl-newmail.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5A7BEDA034D5B4A0137FB37 /* appl-newmail.tiff */; };
+		F5A7BEDD034D5C0B0137FB37 /* appl-error.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5A7BEDC034D5C0B0137FB37 /* appl-error.tiff */; };
+		F5B2C4EF0350595F01237D66 /* SimpleFIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B2C4ED0350595F01237D66 /* SimpleFIFO.h */; };
+		F5B2C4F00350595F01237D66 /* SimpleSyncFIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B2C4EE0350595F01237D66 /* SimpleSyncFIFO.h */; };
+		F5B2C4F30350597601237D66 /* SimpleFIFO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B2C4F10350597601237D66 /* SimpleFIFO.m */; };
+		F5B2C4F40350597601237D66 /* SimpleSyncFIFO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B2C4F20350597601237D66 /* SimpleSyncFIFO.m */; };
+		F5B2C504035077BB01237D66 /* PostedEventProc.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B2C502035077BB01237D66 /* PostedEventProc.h */; };
+		F5B2C505035077BB01237D66 /* PostedEventProc.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B2C503035077BB01237D66 /* PostedEventProc.m */; };
+		F5C1381F0334454C01A80102 /* UIDLHelpItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C1381D0334454C01A80102 /* UIDLHelpItem.h */; };
+		F5C138200334454C01A80102 /* UIDLHelpItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C1381E0334454C01A80102 /* UIDLHelpItem.m */; };
+		F5C13BA40334C6ED01A80102 /* HeaderAnalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C13BA20334C6ED01A80102 /* HeaderAnalizer.h */; };
+		F5C13BA50334C6EE01A80102 /* HeaderAnalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C13BA30334C6ED01A80102 /* HeaderAnalizer.m */; };
+		F5FC2555033602AF01A80102 /* HeaderWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5FC2553033602AF01A80102 /* HeaderWin.nib */; };
+		F5FC25580336031B01A80102 /* HeaderWinController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FC25560336031B01A80102 /* HeaderWinController.h */; };
+		F5FC25590336031B01A80102 /* HeaderWinController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FC25570336031B01A80102 /* HeaderWinController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B503F85E129BD1B600A54AFF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "mp-help";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59B46F5033B618201A80102 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "mp-help";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		17587328FF379C6511CA2CBB /* MailPeeper_Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MailPeeper_Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		B503F863129BD1B600A54AFF /* Info-MailPeeper_____________.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-MailPeeper_____________.plist"; sourceTree = "<group>"; };
+		B503F864129BD1B600A54AFF /* MailPeeper_Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailPeeper_Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6360B420402A355009CA739 /* AddressBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookController.h; sourceTree = "<group>"; };
+		D6360B430402A355009CA739 /* AddressBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookController.m; sourceTree = "<group>"; };
+		D6360B4E0402A629009CA739 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		D6615AB303B6D7FC00E1D998 /* new.applescript */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.applescript; path = new.applescript; sourceTree = "<group>"; };
+		D6CBB56804ADDA650025594E /* mailpeeper-Menu_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 18446744071562067968; lastKnownFileType = sourcecode.c.h; path = "mailpeeper-Menu_Prefix.h"; sourceTree = "<group>"; };
+		D6D8D08C03CC4FD40053CC21 /* mail-error.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "mail-error.icns"; sourceTree = "<group>"; };
+		D6D8D08D03CC4FD40053CC21 /* mail-new.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "mail-new.icns"; sourceTree = "<group>"; };
+		D6D8D08E03CC4FD40053CC21 /* mail-r.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "mail-r.icns"; sourceTree = "<group>"; };
+		D6D8D08F03CC4FD40053CC21 /* mail.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = mail.icns; sourceTree = "<group>"; };
+		F511E572033B85B401A80102 /* next.html */ = {isa = PBXFileReference; fileEncoding = 18446744071562067968; lastKnownFileType = text.html; path = next.html; sourceTree = "<group>"; };
+		F51360AC0333381A0189C6B1 /* WorkerThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerThread.h; sourceTree = "<group>"; };
+		F51360AD0333381A0189C6B1 /* WorkerThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkerThread.m; sourceTree = "<group>"; };
+		F5136424033376160189C6B1 /* STCPCReadLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCPCReadLine.m; sourceTree = "<group>"; };
+		F5136425033376160189C6B1 /* SimpleTCPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTCPClient.m; sourceTree = "<group>"; };
+		F5136426033376160189C6B1 /* STCPCReadLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCPCReadLine.h; sourceTree = "<group>"; };
+		F5136427033376160189C6B1 /* SimpleTCPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTCPClient.h; sourceTree = "<group>"; };
+		F544360303309E2901A80102 /* Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Misc.h; sourceTree = "<group>"; };
+		F544360403309E2901A80102 /* Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Misc.m; sourceTree = "<group>"; };
+		F544360A0330A06F01A80102 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F544360C0330BD1701A80102 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
+		F544360D0330BD1701A80102 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
+		F54436140330C70001A80102 /* PeepedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeepedItem.h; sourceTree = "<group>"; };
+		F54436150330C70001A80102 /* PeepedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeepedItem.m; sourceTree = "<group>"; };
+		F54436180330CAB501A80102 /* AccountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountItem.h; sourceTree = "<group>"; };
+		F54436190330CAB501A80102 /* AccountItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountItem.m; sourceTree = "<group>"; };
+		F55A9E990337276E01A80102 /* delete-b.pict */ = {isa = PBXFileReference; lastKnownFileType = image.pict; path = "delete-b.pict"; sourceTree = "<group>"; };
+		F55A9E9B0337277401A80102 /* go-b.pict */ = {isa = PBXFileReference; lastKnownFileType = image.pict; path = "go-b.pict"; sourceTree = "<group>"; };
+		F55A9EA703372ACE01A80102 /* header-b.pict */ = {isa = PBXFileReference; lastKnownFileType = image.pict; path = "header-b.pict"; sourceTree = "<group>"; };
+		F55A9EA803372ACE01A80102 /* stop-b.pict */ = {isa = PBXFileReference; lastKnownFileType = image.pict; path = "stop-b.pict"; sourceTree = "<group>"; };
+		F55A9EA903372ACE01A80102 /* pref-b.pict */ = {isa = PBXFileReference; lastKnownFileType = image.pict; path = "pref-b.pict"; sourceTree = "<group>"; };
+		F55A9EAD03372D4901A80102 /* appl-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "appl-icon.icns"; sourceTree = "<group>"; };
+		F58AF43C03319DC101A80102 /* GeneralItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralItem.h; sourceTree = "<group>"; };
+		F58AF43D03319DC101A80102 /* GeneralItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralItem.m; sourceTree = "<group>"; };
+		F59B46F8033B626401A80102 /* accountpane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accountpane.png; sourceTree = "<group>"; };
+		F59B46F9033B626401A80102 /* help.html */ = {isa = PBXFileReference; fileEncoding = 18446744071562067968; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		F59B46FA033B626401A80102 /* junkaipane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = junkaipane.png; sourceTree = "<group>"; };
+		F59B46FB033B626401A80102 /* mainwindow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainwindow.png; sourceTree = "<group>"; };
+		F59B46FC033B626401A80102 /* newaccpane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newaccpane.png; sourceTree = "<group>"; };
+		F59B46FD033B626401A80102 /* prefwindow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prefwindow.png; sourceTree = "<group>"; };
+		F5A48F38033085C901A80102 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F5A48F39033085E401A80102 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 18446744071562067968; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5A48F3A0330888101A80102 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		F5A48F3B0330888101A80102 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		F5A7BED8034D5A690137FB37 /* appl-walking.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "appl-walking.tiff"; sourceTree = "<group>"; };
+		F5A7BEDA034D5B4A0137FB37 /* appl-newmail.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "appl-newmail.tiff"; sourceTree = "<group>"; };
+		F5A7BEDC034D5C0B0137FB37 /* appl-error.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "appl-error.tiff"; sourceTree = "<group>"; };
+		F5B2C4ED0350595F01237D66 /* SimpleFIFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleFIFO.h; sourceTree = "<group>"; };
+		F5B2C4EE0350595F01237D66 /* SimpleSyncFIFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSyncFIFO.h; sourceTree = "<group>"; };
+		F5B2C4F10350597601237D66 /* SimpleFIFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleFIFO.m; sourceTree = "<group>"; };
+		F5B2C4F20350597601237D66 /* SimpleSyncFIFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSyncFIFO.m; sourceTree = "<group>"; };
+		F5B2C502035077BB01237D66 /* PostedEventProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostedEventProc.h; sourceTree = "<group>"; };
+		F5B2C503035077BB01237D66 /* PostedEventProc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostedEventProc.m; sourceTree = "<group>"; };
+		F5BF8349035017040138D120 /* Dev-memo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Dev-memo.txt"; sourceTree = "<group>"; };
+		F5C1381D0334454C01A80102 /* UIDLHelpItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDLHelpItem.h; sourceTree = "<group>"; };
+		F5C1381E0334454C01A80102 /* UIDLHelpItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDLHelpItem.m; sourceTree = "<group>"; };
+		F5C13BA20334C6ED01A80102 /* HeaderAnalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderAnalizer.h; sourceTree = "<group>"; };
+		F5C13BA30334C6ED01A80102 /* HeaderAnalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderAnalizer.m; sourceTree = "<group>"; };
+		F5FC2554033602AF01A80102 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/HeaderWin.nib; sourceTree = "<group>"; };
+		F5FC25560336031B01A80102 /* HeaderWinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderWinController.h; sourceTree = "<group>"; };
+		F5FC25570336031B01A80102 /* HeaderWinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderWinController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */,
+				D6360B4F0402A629009CA739 /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B503F85B129BD1B600A54AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B503F85C129BD1B600A54AFF /* Cocoa.framework in Frameworks */,
+				B503F85D129BD1B600A54AFF /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5BF8347035016A30138D120 /* headers */,
+				F5BF8348035016CD0138D120 /* implements */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6360B4E0402A629009CA739 /* AddressBook.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* MailPeeper_Menu.app */,
+				B503F864129BD1B600A54AFF /* MailPeeper_Menu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MailPeeper */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F5BF8349035017040138D120 /* Dev-memo.txt */,
+				B503F863129BD1B600A54AFF /* Info-MailPeeper_____________.plist */,
+			);
+			name = MailPeeper;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D6CBB56804ADDA650025594E /* mailpeeper-Menu_Prefix.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D6615AB203B6D7FC00E1D998 /* appleScript */,
+				F59B46F6033B626401A80102 /* mp-help */,
+				F58AF7CA033204BF01A80102 /* picts */,
+				F54436090330A06F01A80102 /* Localizable.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				F5FC2553033602AF01A80102 /* HeaderWin.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6615AB203B6D7FC00E1D998 /* appleScript */ = {
+			isa = PBXGroup;
+			children = (
+				D6615AB303B6D7FC00E1D998 /* new.applescript */,
+			);
+			path = appleScript;
+			sourceTree = "<group>";
+		};
+		F58AF7CA033204BF01A80102 /* picts */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8D08C03CC4FD40053CC21 /* mail-error.icns */,
+				D6D8D08D03CC4FD40053CC21 /* mail-new.icns */,
+				D6D8D08E03CC4FD40053CC21 /* mail-r.icns */,
+				D6D8D08F03CC4FD40053CC21 /* mail.icns */,
+				F55A9EAD03372D4901A80102 /* appl-icon.icns */,
+				F5A7BEDC034D5C0B0137FB37 /* appl-error.tiff */,
+				F5A7BEDA034D5B4A0137FB37 /* appl-newmail.tiff */,
+				F5A7BED8034D5A690137FB37 /* appl-walking.tiff */,
+				F55A9E990337276E01A80102 /* delete-b.pict */,
+				F55A9E9B0337277401A80102 /* go-b.pict */,
+				F55A9EA703372ACE01A80102 /* header-b.pict */,
+				F55A9EA903372ACE01A80102 /* pref-b.pict */,
+				F55A9EA803372ACE01A80102 /* stop-b.pict */,
+			);
+			path = picts;
+			sourceTree = "<group>";
+		};
+		F59B46F6033B626401A80102 /* mp-help */ = {
+			isa = PBXGroup;
+			children = (
+				F59B46F9033B626401A80102 /* help.html */,
+				F511E572033B85B401A80102 /* next.html */,
+				F59B46F8033B626401A80102 /* accountpane.png */,
+				F59B46FA033B626401A80102 /* junkaipane.png */,
+				F59B46FB033B626401A80102 /* mainwindow.png */,
+				F59B46FC033B626401A80102 /* newaccpane.png */,
+				F59B46FD033B626401A80102 /* prefwindow.png */,
+			);
+			path = "mp-help";
+			sourceTree = "<group>";
+		};
+		F5BF8347035016A30138D120 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				F5A48F3A0330888101A80102 /* AppController.h */,
+				D6360B420402A355009CA739 /* AddressBookController.h */,
+				F544360303309E2901A80102 /* Misc.h */,
+				F544360D0330BD1701A80102 /* PrefController.h */,
+				F54436140330C70001A80102 /* PeepedItem.h */,
+				F58AF43C03319DC101A80102 /* GeneralItem.h */,
+				F51360AC0333381A0189C6B1 /* WorkerThread.h */,
+				F5136426033376160189C6B1 /* STCPCReadLine.h */,
+				F5136427033376160189C6B1 /* SimpleTCPClient.h */,
+				F5C1381D0334454C01A80102 /* UIDLHelpItem.h */,
+				F5C13BA20334C6ED01A80102 /* HeaderAnalizer.h */,
+				F5FC25560336031B01A80102 /* HeaderWinController.h */,
+				F54436180330CAB501A80102 /* AccountItem.h */,
+				F5B2C4ED0350595F01237D66 /* SimpleFIFO.h */,
+				F5B2C4EE0350595F01237D66 /* SimpleSyncFIFO.h */,
+				F5B2C502035077BB01237D66 /* PostedEventProc.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		F5BF8348035016CD0138D120 /* implements */ = {
+			isa = PBXGroup;
+			children = (
+				F5A48F3B0330888101A80102 /* AppController.m */,
+				D6360B430402A355009CA739 /* AddressBookController.m */,
+				F54436190330CAB501A80102 /* AccountItem.m */,
+				F544360403309E2901A80102 /* Misc.m */,
+				F544360C0330BD1701A80102 /* PrefController.m */,
+				F54436150330C70001A80102 /* PeepedItem.m */,
+				F58AF43D03319DC101A80102 /* GeneralItem.m */,
+				F51360AD0333381A0189C6B1 /* WorkerThread.m */,
+				F5136424033376160189C6B1 /* STCPCReadLine.m */,
+				F5136425033376160189C6B1 /* SimpleTCPClient.m */,
+				F5C1381E0334454C01A80102 /* UIDLHelpItem.m */,
+				F5C13BA30334C6ED01A80102 /* HeaderAnalizer.m */,
+				F5FC25570336031B01A80102 /* HeaderWinController.m */,
+				F5B2C4F10350597601237D66 /* SimpleFIFO.m */,
+				F5B2C4F20350597601237D66 /* SimpleSyncFIFO.m */,
+				F5B2C503035077BB01237D66 /* PostedEventProc.m */,
+			);
+			name = implements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A48F3C0330888101A80102 /* AppController.h in Headers */,
+				F544360503309E2901A80102 /* Misc.h in Headers */,
+				F544360F0330BD1701A80102 /* PrefController.h in Headers */,
+				F54436160330C70001A80102 /* PeepedItem.h in Headers */,
+				F544361A0330CAB501A80102 /* AccountItem.h in Headers */,
+				F58AF43E03319DC101A80102 /* GeneralItem.h in Headers */,
+				F51360AE0333381A0189C6B1 /* WorkerThread.h in Headers */,
+				F513642A033376170189C6B1 /* STCPCReadLine.h in Headers */,
+				F513642B033376170189C6B1 /* SimpleTCPClient.h in Headers */,
+				F5C1381F0334454C01A80102 /* UIDLHelpItem.h in Headers */,
+				F5C13BA40334C6ED01A80102 /* HeaderAnalizer.h in Headers */,
+				F5FC25580336031B01A80102 /* HeaderWinController.h in Headers */,
+				F5B2C4EF0350595F01237D66 /* SimpleFIFO.h in Headers */,
+				F5B2C4F00350595F01237D66 /* SimpleSyncFIFO.h in Headers */,
+				F5B2C504035077BB01237D66 /* PostedEventProc.h in Headers */,
+				D6CBB56904ADDA650025594E /* mailpeeper-Menu_Prefix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B503F81F129BD1B600A54AFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B503F820129BD1B600A54AFF /* AppController.h in Headers */,
+				B503F821129BD1B600A54AFF /* Misc.h in Headers */,
+				B503F822129BD1B600A54AFF /* PrefController.h in Headers */,
+				B503F823129BD1B600A54AFF /* PeepedItem.h in Headers */,
+				B503F824129BD1B600A54AFF /* AccountItem.h in Headers */,
+				B503F825129BD1B600A54AFF /* GeneralItem.h in Headers */,
+				B503F826129BD1B600A54AFF /* WorkerThread.h in Headers */,
+				B503F827129BD1B600A54AFF /* STCPCReadLine.h in Headers */,
+				B503F828129BD1B600A54AFF /* SimpleTCPClient.h in Headers */,
+				B503F829129BD1B600A54AFF /* UIDLHelpItem.h in Headers */,
+				B503F82A129BD1B600A54AFF /* HeaderAnalizer.h in Headers */,
+				B503F82B129BD1B600A54AFF /* HeaderWinController.h in Headers */,
+				B503F82C129BD1B600A54AFF /* SimpleFIFO.h in Headers */,
+				B503F82D129BD1B600A54AFF /* SimpleSyncFIFO.h in Headers */,
+				B503F82E129BD1B600A54AFF /* PostedEventProc.h in Headers */,
+				B503F82F129BD1B600A54AFF /* mailpeeper-Menu_Prefix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B503F81E129BD1B600A54AFF /* MailPeeper（アップグレードしました） */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B503F85F129BD1B600A54AFF /* Build configuration list for PBXNativeTarget "MailPeeper（アップグレードしました）" */;
+			buildPhases = (
+				B503F81F129BD1B600A54AFF /* Headers */,
+				B503F830129BD1B600A54AFF /* Resources */,
+				B503F84A129BD1B600A54AFF /* Sources */,
+				B503F85B129BD1B600A54AFF /* Frameworks */,
+				B503F85E129BD1B600A54AFF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MailPeeper（アップグレードしました）";
+			productInstallPath = "$(HOME)/Applications";
+			productName = MailPeeper;
+			productReference = B503F864129BD1B600A54AFF /* MailPeeper_Menu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B503F800129BCD7F00A54AFF /* Build configuration list for PBXProject "new" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MailPeeper */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B503F81E129BD1B600A54AFF /* MailPeeper（アップグレードしました） */,
+				29B97326FDCFA39411CA2CEA /* MailPeeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */,
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				F544360B0330A06F01A80102 /* Localizable.strings in Resources */,
+				F5FC2555033602AF01A80102 /* HeaderWin.nib in Resources */,
+				F55A9E9A0337276E01A80102 /* delete-b.pict in Resources */,
+				F55A9E9C0337277401A80102 /* go-b.pict in Resources */,
+				F55A9EAA03372ACE01A80102 /* header-b.pict in Resources */,
+				F55A9EAB03372ACE01A80102 /* stop-b.pict in Resources */,
+				F55A9EAC03372ACE01A80102 /* pref-b.pict in Resources */,
+				F55A9EAE03372D4901A80102 /* appl-icon.icns in Resources */,
+				F59B46FF033B626601A80102 /* accountpane.png in Resources */,
+				F59B4700033B626701A80102 /* help.html in Resources */,
+				F59B4701033B626701A80102 /* junkaipane.png in Resources */,
+				F59B4702033B626701A80102 /* mainwindow.png in Resources */,
+				F59B4703033B626701A80102 /* newaccpane.png in Resources */,
+				F59B4704033B626801A80102 /* prefwindow.png in Resources */,
+				F511E573033B85B401A80102 /* next.html in Resources */,
+				F5A7BED9034D5A690137FB37 /* appl-walking.tiff in Resources */,
+				F5A7BEDB034D5B4A0137FB37 /* appl-newmail.tiff in Resources */,
+				F5A7BEDD034D5C0B0137FB37 /* appl-error.tiff in Resources */,
+				D6615AB403B6D7FC00E1D998 /* new.applescript in Resources */,
+				D6D8D09003CC4FD40053CC21 /* mail-error.icns in Resources */,
+				D6D8D09103CC4FD40053CC21 /* mail-new.icns in Resources */,
+				D6D8D09203CC4FD40053CC21 /* mail-r.icns in Resources */,
+				D6D8D09303CC4FD40053CC21 /* mail.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B503F830129BD1B600A54AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B503F831129BD1B600A54AFF /* MainMenu.nib in Resources */,
+				B503F832129BD1B600A54AFF /* InfoPlist.strings in Resources */,
+				B503F833129BD1B600A54AFF /* Localizable.strings in Resources */,
+				B503F834129BD1B600A54AFF /* HeaderWin.nib in Resources */,
+				B503F835129BD1B600A54AFF /* delete-b.pict in Resources */,
+				B503F836129BD1B600A54AFF /* go-b.pict in Resources */,
+				B503F837129BD1B600A54AFF /* header-b.pict in Resources */,
+				B503F838129BD1B600A54AFF /* stop-b.pict in Resources */,
+				B503F839129BD1B600A54AFF /* pref-b.pict in Resources */,
+				B503F83A129BD1B600A54AFF /* appl-icon.icns in Resources */,
+				B503F83B129BD1B600A54AFF /* accountpane.png in Resources */,
+				B503F83C129BD1B600A54AFF /* help.html in Resources */,
+				B503F83D129BD1B600A54AFF /* junkaipane.png in Resources */,
+				B503F83E129BD1B600A54AFF /* mainwindow.png in Resources */,
+				B503F83F129BD1B600A54AFF /* newaccpane.png in Resources */,
+				B503F840129BD1B600A54AFF /* prefwindow.png in Resources */,
+				B503F841129BD1B600A54AFF /* next.html in Resources */,
+				B503F842129BD1B600A54AFF /* appl-walking.tiff in Resources */,
+				B503F843129BD1B600A54AFF /* appl-newmail.tiff in Resources */,
+				B503F844129BD1B600A54AFF /* appl-error.tiff in Resources */,
+				B503F845129BD1B600A54AFF /* new.applescript in Resources */,
+				B503F846129BD1B600A54AFF /* mail-error.icns in Resources */,
+				B503F847129BD1B600A54AFF /* mail-new.icns in Resources */,
+				B503F848129BD1B600A54AFF /* mail-r.icns in Resources */,
+				B503F849129BD1B600A54AFF /* mail.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA /* main.m in Sources */,
+				F5A48F3D0330888101A80102 /* AppController.m in Sources */,
+				F544360603309E2901A80102 /* Misc.m in Sources */,
+				F544360E0330BD1701A80102 /* PrefController.m in Sources */,
+				F54436170330C70001A80102 /* PeepedItem.m in Sources */,
+				F544361B0330CAB501A80102 /* AccountItem.m in Sources */,
+				F58AF43F03319DC101A80102 /* GeneralItem.m in Sources */,
+				F51360AF0333381A0189C6B1 /* WorkerThread.m in Sources */,
+				F5136428033376160189C6B1 /* STCPCReadLine.m in Sources */,
+				F5136429033376170189C6B1 /* SimpleTCPClient.m in Sources */,
+				F5C138200334454C01A80102 /* UIDLHelpItem.m in Sources */,
+				F5C13BA50334C6EE01A80102 /* HeaderAnalizer.m in Sources */,
+				F5FC25590336031B01A80102 /* HeaderWinController.m in Sources */,
+				F5B2C4F30350597601237D66 /* SimpleFIFO.m in Sources */,
+				F5B2C4F40350597601237D66 /* SimpleSyncFIFO.m in Sources */,
+				F5B2C505035077BB01237D66 /* PostedEventProc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B503F84A129BD1B600A54AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B503F84B129BD1B600A54AFF /* main.m in Sources */,
+				B503F84C129BD1B600A54AFF /* AppController.m in Sources */,
+				B503F84D129BD1B600A54AFF /* Misc.m in Sources */,
+				B503F84E129BD1B600A54AFF /* PrefController.m in Sources */,
+				B503F84F129BD1B600A54AFF /* PeepedItem.m in Sources */,
+				B503F850129BD1B600A54AFF /* AccountItem.m in Sources */,
+				B503F851129BD1B600A54AFF /* GeneralItem.m in Sources */,
+				B503F852129BD1B600A54AFF /* WorkerThread.m in Sources */,
+				B503F853129BD1B600A54AFF /* STCPCReadLine.m in Sources */,
+				B503F854129BD1B600A54AFF /* SimpleTCPClient.m in Sources */,
+				B503F855129BD1B600A54AFF /* UIDLHelpItem.m in Sources */,
+				B503F856129BD1B600A54AFF /* HeaderAnalizer.m in Sources */,
+				B503F857129BD1B600A54AFF /* HeaderWinController.m in Sources */,
+				B503F858129BD1B600A54AFF /* SimpleFIFO.m in Sources */,
+				B503F859129BD1B600A54AFF /* SimpleSyncFIFO.m in Sources */,
+				B503F85A129BD1B600A54AFF /* PostedEventProc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A48F39033085E401A80102 /* Japanese */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A48F38033085C901A80102 /* Japanese */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		F54436090330A06F01A80102 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F544360A0330A06F01A80102 /* Japanese */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F5FC2553033602AF01A80102 /* HeaderWin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FC2554033602AF01A80102 /* Japanese */,
+			);
+			name = HeaderWin.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B503F7FA129BCD7F00A54AFF /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		B503F7FB129BCD7F00A54AFF /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		B503F7FC129BCD7F00A54AFF /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		B503F7FD129BCD7F00A54AFF /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = "mailpeeper-Menu_Prefix.h";
+				PRODUCT_NAME = MailPeeper_Menu;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		B503F7FE129BCD7F00A54AFF /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = "mailpeeper-Menu_Prefix.h";
+				PRODUCT_NAME = MailPeeper_Menu;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		B503F7FF129BCD7F00A54AFF /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = "mailpeeper-Menu_Prefix.h";
+				PRODUCT_NAME = MailPeeper_Menu;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		B503F860129BD1B600A54AFF /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mailpeeper-Menu_Prefix.h";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-MailPeeper_____________.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = MailPeeper_Menu;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		B503F861129BD1B600A54AFF /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mailpeeper-Menu_Prefix.h";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-MailPeeper_____________.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = MailPeeper_Menu;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		B503F862129BD1B600A54AFF /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mailpeeper-Menu_Prefix.h";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-MailPeeper_____________.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = MailPeeper_Menu;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B503F800129BCD7F00A54AFF /* Build configuration list for PBXProject "new" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B503F7FA129BCD7F00A54AFF /* Development */,
+				B503F7FB129BCD7F00A54AFF /* Deployment */,
+				B503F7FC129BCD7F00A54AFF /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		B503F801129BCD7F00A54AFF /* Build configuration list for PBXApplicationTarget "MailPeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B503F7FD129BCD7F00A54AFF /* Development */,
+				B503F7FE129BCD7F00A54AFF /* Deployment */,
+				B503F7FF129BCD7F00A54AFF /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		B503F85F129BD1B600A54AFF /* Build configuration list for PBXNativeTarget "MailPeeper（アップグレードしました）" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B503F860129BD1B600A54AFF /* Development */,
+				B503F861129BD1B600A54AFF /* Deployment */,
+				B503F862129BD1B600A54AFF /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
